@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Post from './components/Post';
 
 function App() {
+
+  const posts = [
+    {
+      id: 1,
+      title: "test",
+    },
+    {
+      id: 2,
+      title: "test2",
+    },
+    {
+      id: 3,
+      title: "test3"
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>My Posts</h2>
+
+      {posts.map((post) => (
+        < Post title={post.title} />
+      ))}
     </div>
   );
 }
