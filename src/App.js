@@ -1,30 +1,18 @@
 import './App.css';
-import Post from './components/Post';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import Home from './pages/Home/Home';
+import Posts from './pages/Posts/Posts';
 
 function App() {
-
-  const posts = [
-    {
-      id: 1,
-      title: "test",
-    },
-    {
-      id: 2,
-      title: "test2",
-    },
-    {
-      id: 3,
-      title: "test3"
-    },
-  ];
-
   return (
     <div className="App">
-      <h2>My Posts</h2>
-
-      {posts.map((post) => (
-        < Post title={post.title} />
-      ))}
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/posts" element={<Posts />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.coverImg {
+  background: url("https://i.ibb.co/7NxZ3Vd/Adobe-Stock-218154074.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
