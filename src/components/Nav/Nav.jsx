@@ -15,6 +15,7 @@ export default function Nav() {
       <div class="navbar-nav">
               <Link to="/" class="nav-link">Home</Link>
               <Link to="/posts" class="nav-link">Posts</Link>
+              <p>Test</p>
       </div>
     </div>
   </div>
