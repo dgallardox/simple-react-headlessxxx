@@ -3,15 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home/Home";
-import Posts from "./components/Posts/Posts";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  HttpLink,
-  from,
 } from "@apollo/client";
-import { onError } from '@apollo/client/link/error'
 import GetData from "./components/GetData";
 
 const client = new ApolloClient({
