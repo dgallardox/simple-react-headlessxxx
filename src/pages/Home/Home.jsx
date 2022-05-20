@@ -3,7 +3,7 @@ import Cover from "../../components/Cover/Cover"
 export default function Home() {
   return (
     <>
-    <p>test</p>
+    <p>testing</p>
     <Cover />
     </>
   )
